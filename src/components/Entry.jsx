@@ -20,7 +20,8 @@ function Entry() {
         setEntries([...entries, {id : index , title : titleVal, descr : descVal,
           addDate : date ,addTime: time, completed: false }])
         setIndex(index+1);
-        
+        document.querySelector('#desc').value = "";
+        document.querySelector('#title').value ="";
     }
   return (
     <>
